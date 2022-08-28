@@ -26,7 +26,10 @@ while True:
          print('you got it in ', guesses, "guesses")
          break
     else:
-         print('try again')
+        if user_guess > random_num:
+            print("you are above the range of numbers")
+        else:
+             print("you are below the range of numbers")
 
     #print('you got it in ', guesses, "guesses")
 
