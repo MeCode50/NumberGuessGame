@@ -15,4 +15,11 @@ print(num)
 
 while True:
     user_guess = input("Guess a number: ")
+    if user_guess.isdigit():
+        user_guess = int(user_guess)
+    else:
+        print('type in a number next time')
+        continue
+
+    
 
