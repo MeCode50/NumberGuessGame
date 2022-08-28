@@ -10,5 +10,9 @@ else:
     print("What you entered is not a number, type a number next time")
     quit()
 
-num = random.randrange(101)
+num = random.randrange(top_range)
+print(num)
+
+while True:
+    user_guess = input("Guess a number: ")
 
