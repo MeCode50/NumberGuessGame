@@ -11,19 +11,25 @@ else:
     quit()
 
 random_num = random.randint(0, top_range)
-
+guesses = 0
 while True:
-     user_guess = input("Guess a number: ")
-     if user_guess.isdigit():
+    guesses +=1
+
+    user_guess = input("Guess a number: ")
+    if user_guess.isdigit():
          user_guess = int(user_guess)
-     else:
+    else:
          print('type in a number next time')
          continue
-     if user_guess == random_num:
+    if user_guess == random_num:
          print('correct')
+         print('you got it in ', guesses, "guesses")
          break
-     else:
+    else:
          print('try again')
+
+    #print('you got it in ', guesses, "guesses")
+
 
 
 
